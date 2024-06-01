@@ -1,29 +1,33 @@
+/* Apply box-sizing: border-box to all elements for consistent sizing */
 * {
   box-sizing: border-box;
 }
-
+/* Set global font and remove default margin for the body */
 body {
   font-family: Arial;
   margin: 0;
 }
-
+/* Style the header with padding, centered text, background color, and text color */
 header {
   padding: 40px;
   text-align: center;
-  background: #13293d;
-  color: #fff;
+  background: #13293d; 
+  color: #fff;  
 }
 
 /* 
 What happens when we set the display property to flex? 
-TODO: Write your answer here 
 The navigation tags will flow vertically.
 */
+
+/* Style the navigation bar with a flexbox layout and background color */
+
 nav {
   display: flex;
-  background-color: #d8a47f;
+  background-color: #d8a47f; 
 }
 
+/* Style the navigation links */
 nav a {
   color: #13293d;
   padding: 14px 20px;
@@ -33,14 +37,17 @@ nav a {
 
 /* 
 What is the flex-wrap property? 
-TODO: Write your answer here 
+
 Flex-wrap means set to wrap and the content is wrapping.
 */
+
+/* Main content area with flexbox layout that wraps child elements */
 main {
   display: flex;
   flex-wrap: wrap;
 }
 
+/* Sidebar section with flexible width, background color, padding, and centered text */
 aside {
   flex: 1;
   background-color: #b9c6ae;
@@ -48,7 +55,7 @@ aside {
   text-align: center;
 }
 
-
+/* Footer section with padding, centered text, background color, and text color */
 footer {
   padding: 20px;
   text-align: center;
@@ -58,7 +65,7 @@ footer {
 
 /* 
 What does the justify-content property do? 
-TODO: Write your answer here 
+
 The justify-content property does the alignment along the main axis.
 */
 .products {
@@ -73,9 +80,11 @@ The justify-content property does the alignment along the main axis.
 /* 
 What is the flex property a shorthand property for?
 What is it doing here? 
-TODO: Write your answer here 
+
 The flex property sets how a flex item will grow or shrink to fit the space available in its flex container. It shrinks cards here.
 */
+
+/* Style for product cards with border, padding, and fixed width */
 .card {
   border-style: solid;
   border-width: 1px;
@@ -84,14 +93,17 @@ The flex property sets how a flex item will grow or shrink to fit the space avai
   flex: 0 0 400px;
 }
 
+/* Padding for the header inside the product cards */
 .card header {
   padding: 20px;
 }
 
+/* Center-align text within paragraphs inside the product cards */
 .card p {
   text-align: center;
 }
 
+/* Set the image to take up 100% width of the card */
 .card img {
   width: 100%;
 }
@@ -99,7 +111,7 @@ The flex property sets how a flex item will grow or shrink to fit the space avai
 /* 
 What does the flex-direction property define?
 What is it doing here? 
-TODO: Write your answer here 
+
 The flex-direction property sets how flex items are placed in the flex container defining the main axis and the direction. All items display in a column here.
 */
 @media screen and (max-width: 768px) {
